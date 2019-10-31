@@ -1,0 +1,26 @@
+#! /bin/bash
+
+echo -n "Enter your login name: "; read name
+if [ "$name" = "$USER" ]
+then
+    echo "Hello, $name. How are you today?"
+else
+    echo "Your are not $USER, so how are you?"
+fi
+
+echo "Enter a number: ";read i
+if [ $i -eq 1 ]
+then
+    echo "Your input is 1"
+else
+    echo "Your input is not 1"
+fi
+
+echo "Enter a number: "
+read x
+if [ $x -eq 0 -o $x -eq 1 ]
+then
+    echo "$x is either 1 or 0"
+else
+    echo "$x is neither 1 nor 0"
+fi

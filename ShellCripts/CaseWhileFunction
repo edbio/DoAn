@@ -1,0 +1,31 @@
+#! /bin/bash
+
+echo -n "Enter a number 0 < x <10: ";read x
+case $x in
+    1) echo "Value of x is 1.";;
+    2) echo "Value of x is 2.";;
+    3) echo "Value of x is 3.";;
+    4) echo "Value of x is 4.";;
+    5) echo "Value of x is 5.";;
+    6) echo "Value of x is 6.";;
+    7) echo "Value of x is 7.";;
+    8) echo "Value of x is 8.";;
+    9) echo "Value of x is 9.";;
+    *) echo "Unrecognized value.";;
+esac
+    
+echo "Enter a number: "; read y
+let sum=0; let i=1
+while [ $i -le $y ]; do
+    let "sum = $sum +$i"
+    let i=$i+1
+done
+echo "the sum of the first $y number(s) is: $sum"
+
+#Define function
+Hello () {
+    echo "Hello world!"
+}
+
+#Invoke your function
+Hello

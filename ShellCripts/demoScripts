@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo "Hello World"
+
+STR="Hello World!"
+echo $STR
+
+LIST=$(ls)
+echo $LIST
+
+let X=10+2*7
+echo $X
+

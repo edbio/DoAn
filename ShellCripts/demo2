@@ -1,0 +1,10 @@
+#! /bin/bash
+# who > users
+
+# grep 'the' textfile
+# grep '\<the\>' textfile
+ 
+sed -i 's/foo/bar/g' hello.txt
+cat hello.txt
+
+awk '{print $3}' hello.txt
